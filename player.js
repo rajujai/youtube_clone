@@ -1,4 +1,4 @@
-showData();
+
 const showData = ()=>{
     let videoId = localStorage.getItem('video_id');
     let video = document.createElement('div');
@@ -7,3 +7,5 @@ const showData = ()=>{
     frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">`
     document.getElementById('content').append(video);
 }
+
+showData();
