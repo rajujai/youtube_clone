@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #181818;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100vw - 4%);
+    padding-right: 4%;
+    background-color: #202020;
+    color: #fff;
+    font-size: larger;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: .5%;
+}
+.navbar li{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+}
+.search-box{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    padding-right: 0 !important;
+}
+#search{
+    width: calc(50vw - 20px);
+    padding: 1.5%;
+    font-size: large;
+    background-color: #121212;
+    border: none;
+    color: #e2e2e2;
+    outline: none;
+}
+#search:focus{
+    outline: #065fd4 solid 1.5px;
+}
+.search-icon{
+    position: relative;
+    left: .1%;
+    background-color: #313131;
+    padding: 2%;
+    height: 42px;
+    width: 70px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.search-box + li{
+    padding-left: 2% !important;
+}
+.mic-icon{
+    padding: 2%;
+    height: 42px;
+    width: 42px;
+    background-color: #121212;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-table-cells{
+    background-color: #fff;
+    color: #121212;
+    font-size: 32px;
+    clip-path: inset(10% 10% 10% 10%);
+}
+.signin-btn{
+    width: 100px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    font-size: 1em;
+}
+.fa-youtube{
+    color: red;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    background-color: #202020;
+    color: #fff;
+}
+.small{
+    display: flex;
+    flex-direction: column;
+}
+.small > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30% 0;
+}
+.small > div:hover{
+    background-color: #313131;
+}
+.small > div span{
+    font-size: .8em;
+}

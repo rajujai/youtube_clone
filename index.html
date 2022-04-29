@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/a12edb9245.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <div id="menu"><i class="fa-solid fa-bars"></i></div>
+            </li>
+            <li>
+                <a href="index.html" class="logo"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="search-box">
+                <input type="search" id="search" placeholder="Search" onkeypress="search(event)">
+                <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </li>
+            <li>
+                <div class="mic-icon">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li><i class="fa-solid fa-table-cells"></i></li>
+            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            <li><div class="signin-btn"><i class="fa-regular fa-circle-user"></i>Sign In</div></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <div class="small">
+            <div id="home"><i class="fa-solid fa-house"></i><span>Home</span></div>
+            <div id="explore"><i class="fa-solid fa-compass"></i><span>Explore</span></div>
+            <div id="subscriptions"><i class="fa-solid fa-photo-film"></i><span>Subscriptions</span></div>
+            <div id="library"><i class="fa-solid fa-photo-film"></i><span>Library</span></div>
+        </div>
+        <div class="large"></div>
+    </div>
+
+    <div id="content"></div>
+    <script src="./index.js"></script>
+</body>
+</html>

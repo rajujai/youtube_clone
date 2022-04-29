@@ -1,0 +1,14 @@
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    padding-left: 5%;
+    color: #fff;
+    font-family: sans-serif;
+}
+.video{
+    width: calc((100vw - 18% - 50px) / 4);
+    margin: 1% 0;
+    padding: 1%;
+}

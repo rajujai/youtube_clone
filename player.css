@@ -1,0 +1,7 @@
+.small{
+    display: none;
+}
+#ytplayer{
+    width: calc(100vw - 100px);
+    height: calc(100vh - 50px);
+}
