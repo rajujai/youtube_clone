@@ -1,6 +1,6 @@
-
+let key = "AIzaSyC5DixyDAL98Xsix1FLTkYXuvGemoafyMk";
 const setPopular = async ()=>{
-    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=20&regionCode=IN&key=AIzaSyC5DixyDAL98Xsix1FLTkYXuvGemoafyMk`);
+    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=20&regionCode=IN&key=${key}`);
     let data = await res.json();
     showData(data.items);
 }
@@ -8,7 +8,7 @@ const setPopular = async ()=>{
 const search = async (e)=>{
     if(e.key==="Enter"){
         let query = document.getElementById("search").value;
-        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=${query}&type=video&videoDefinition=high&maxResults=20&key=AIzaSyC5DixyDAL98Xsix1FLTkYXuvGemoafyMk`);
+        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=${query}&type=video&videoDefinition=high&maxResults=20&key=${key}`);
         let data = await res.json();
         console.log(data.items);
         showData(data.items);
